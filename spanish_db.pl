@@ -1,11 +1,16 @@
 
 % Defining Spanish Greetings
 
-saludo(sal(f1)) --> ["pura"], saludo_auxiliar(Id).
+saludo(sal(f1)) --> ["pura"], saludo1().
 saludo(sal(f2)) --> ["hola"].
-saludo(sal(f3)) --> ["mae"].
-saludo(sal(f4)) --> ["adios"].
-saludo_auxiliar(id1) --> ["vida"].
+saludo(sal(f3)) --> ["saludos"].
+saludo(sal(f4)) --> ["buenos"], saludo2().
+saludo(sal(f5)) --> ["adios"].
+saludo(sal(f6)) --> ["chao"].
+saludo(sal(f7)) --> ["nos"], saludo3().
+saludo1() --> ["vida"].
+saludo2() --> ["dias"].
+saludo3() --> ["vemos"].
 
 
 % Defining Spanish modifiers
@@ -43,10 +48,10 @@ sujeto(suj(su7), _,tercera,singular) --> [""].
 
 % Defining Spanish Nouns
 
-sustantivo(sus(s1),f, tercera, sg) --> ["niña"].
-sustantivo(sus(s2),m, tercera, sg) --> ["niño"].
-sustantivo(sus(s3),f, tercera, pl) --> ["niñas"].
-sustantivo(sus(s4),m, tercera, pl) --> ["niños"].
+sustantivo(sus(s1),f, tercera, sg) --> ["nina"].
+sustantivo(sus(s2),m, tercera, sg) --> ["nino"].
+sustantivo(sus(s3),f, tercera, pl) --> ["ninas"].
+sustantivo(sus(s4),m, tercera, pl) --> ["ninos"].
 sustantivo(sus(s5),m, tercera, sg) --> ["gato"].
 sustantivo(sus(s6),m, tercera, pl) --> ["gatos"].
 sustantivo(sus(s7),m, tercera, sg) --> ["perro"].
@@ -59,9 +64,9 @@ sustantivo(sus(s13),f, tercera, sg) --> ["profesora"].
 sustantivo(sus(s13),m, tercera, sg) --> ["profesor"].
 sustantivo(sus(s14),f, tercera, sg) --> ["profesoras"].
 sustantivo(sus(s14),m, tercera, pl) --> ["profesores"].
-sustantivo(sus(s15),f, tercera, sg) --> ["mamá"].
-sustantivo(sus(s16),m, tercera, sg) --> ["papá"].
-sustantivo(sus(s17),m, tercera, pl) --> ["papás"].
+sustantivo(sus(s15),f, tercera, sg) --> ["mama"].
+sustantivo(sus(s16),m, tercera, sg) --> ["papa"].
+sustantivo(sus(s17),m, tercera, pl) --> ["papas"].
 sustantivo(sus(s18),f, tercera, sg) --> ["comida"].
 sustantivo(sus(s19),f, tercera, sg) --> ["mascota"].
 sustantivo(sus(s20),f, tercera, pl) --> ["mascotas"].

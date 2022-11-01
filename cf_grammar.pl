@@ -1,5 +1,7 @@
 % Context Free Grammar Code
 
+:-style_check(-singleton).
+
 % Including Files
 :-[spanish_db].
 :-[english_db].
@@ -41,3 +43,4 @@ question(det(A,T,S,Q),Num,Pers) --> auxiliar(A), verb_to_be(T,Num,Pers), subject
 
 % Facts for English Greetings
 grettings(sal(S)) --> gretting(S).
+grettings(sal(S,D)) --> gretting(S), gretting(D).

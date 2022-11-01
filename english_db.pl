@@ -3,8 +3,14 @@
 
 gretting(sal(f1)) --> ["hi"].
 gretting(sal(f2)) --> ["hello"].
-gretting(sal(f3)) --> ["bro"].
-gretting(sal(f4)) --> ["bye"].
+gretting(sal(f3)) --> ["greetings"].
+gretting(sal(f4)) --> ["good"], greeting1().
+gretting(sal(f5)) --> ["goodbye"].
+gretting(sal(f6)) --> ["bye"].
+gretting(sal(f7)) --> ["see"], greeting2().
+greeting1() --> ["morning"].
+greeting2() --> ["you"].
+
 
 % Defining English Modifiers
 

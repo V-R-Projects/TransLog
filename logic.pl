@@ -1,35 +1,50 @@
 :-[cf_grammar].
+:-style_check(-singleton).
 
 transLog():-
-    write("Digite 1 para Espanol-Ingles / Digite 2 para Ingles-Espanol 2: "),
+    writeln("Digite 1 para Espanol-Ingles / Digite 2 para Ingles-Espanol 2 / Salir-Quit 3"),
     read(OPTION),
-    consulta_leng(OPTION).
+    consulta(OPTION).
 
 
 igualdad(X,Y):- X==Y.
 
-% Español a ingles
-consulta_leng(OPTION):-
+% Spanish to English
+consulta(OPTION):-
     igualdad(OPTION,1),
     writeln("Ingrese su Texto: "),
     read(FRASE),
-    string_lower(FRASE, FRASE_MIN),
-    split_string(FRASE_MIN, " ", " ", LIST),
+    string_lower(FRASE, FRASE_MIN), % to lower case
+    split_string(FRASE_MIN, " ", " ", LIST), 
     phrase(oracion(A), LIST),
     phrase(sentence(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
-    write(String).
+    writeln(String),
+    transLog(), !.
 
-% Ingles a español
-consulta_leng(OPTION):-
+% English to Spanish
+consulta(OPTION):-
     igualdad(OPTION,2),
     writeln("Enter your Text: "),
     read(FRASE),
-    string_lower(FRASE, FRASE_MIN),
+    string_lower(FRASE, FRASE_MIN), % to lower case
     split_string(FRASE_MIN, " ", " ", LIST),
     phrase(sentence(A), LIST),
     phrase(oracion(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
-    write(String).
+    writeln(String), 
+    transLog(), !.
+
+% Quit Option
+
+consulta(OPTION):-
+    igualdad(OPTION,3),
+    writeln("Good bye / Adios").
+
+% Continue conversation
+
+consulta(OPTION):-
+    writeln("No entendi, intenta otra vez / Did not understand, try again..."),
+    transLog().
