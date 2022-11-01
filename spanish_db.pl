@@ -49,27 +49,44 @@ sujeto(suj(su7), _,tercera,singular) --> [""].
 % Defining Spanish Nouns
 
 sustantivo(sus(s1),f, tercera, sg) --> ["nina"].
+sustantivo(sus(s1),f, tercera, sg) --> ["chiquita"]. %sinonimo
 sustantivo(sus(s2),m, tercera, sg) --> ["nino"].
+sustantivo(sus(s2),m, tercera, sg) --> ["chiquito"]. %sinonimo
 sustantivo(sus(s3),f, tercera, pl) --> ["ninas"].
+sustantivo(sus(s3),f, tercera, pl) --> ["chiquitas"]. %sinonimo
 sustantivo(sus(s4),m, tercera, pl) --> ["ninos"].
+sustantivo(sus(s4),m, tercera, pl) --> ["chiquitos"]. %sinonimo
 sustantivo(sus(s5),m, tercera, sg) --> ["gato"].
 sustantivo(sus(s6),m, tercera, pl) --> ["gatos"].
 sustantivo(sus(s7),m, tercera, sg) --> ["perro"].
+sustantivo(sus(s7),m, tercera, sg) --> ["cachorro"]. %sinonimo
 sustantivo(sus(s8),m, tercera, pl) --> ["perros"].
+sustantivo(sus(s8),m, tercera, pl) --> ["cachorros"]. %sinonimo
 sustantivo(sus(s9),f, tercera, sg) --> ["persona"].
 sustantivo(sus(s10),f, tercera, sg) --> ["gente"].
+sustantivo(sus(s10),f, tercera, sg) --> ["masa"]. %sinonimo
 sustantivo(sus(s11),f, tercera, sg) --> ["computadora"].
 sustantivo(sus(s12),f, tercera, pl) --> ["computadoras"].
+sustantivo(sus(s12),f, tercera, pl) --> ["computadores"]. %sinonimo
 sustantivo(sus(s13),f, tercera, sg) --> ["profesora"].
+sustantivo(sus(s13),f, tercera, sg) --> ["maestra"]. %sinonimo
 sustantivo(sus(s13),m, tercera, sg) --> ["profesor"].
+sustantivo(sus(s13),m, tercera, sg) --> ["maestro"]. %sinonimo
 sustantivo(sus(s14),f, tercera, sg) --> ["profesoras"].
+sustantivo(sus(s14),f, tercera, sg) --> ["maestras"].  %sinonimo
 sustantivo(sus(s14),m, tercera, pl) --> ["profesores"].
+sustantivo(sus(s14),m, tercera, pl) --> ["maestros"]. %sinonimo
 sustantivo(sus(s15),f, tercera, sg) --> ["mama"].
+sustantivo(sus(s15),f, tercera, sg) --> ["madre"]. %sinonimo
 sustantivo(sus(s16),m, tercera, sg) --> ["papa"].
+sustantivo(sus(s16),m, tercera, sg) --> ["padre"]. %sinonimo
 sustantivo(sus(s17),m, tercera, pl) --> ["papas"].
+sustantivo(sus(s17),m, tercera, pl) --> ["padres"]. %sinonimo
 sustantivo(sus(s18),f, tercera, sg) --> ["comida"].
 sustantivo(sus(s19),f, tercera, sg) --> ["mascota"].
 sustantivo(sus(s20),f, tercera, pl) --> ["mascotas"].
+sustantivo(sus(s21),m, tercera, sg) --> ["grupo"].
+sustantivo(sus(s21),m, tercera, sg) --> ["equipo"]. %sinonimo
 
 
 % Defining Spanish Verbs

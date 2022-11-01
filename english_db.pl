@@ -47,23 +47,32 @@ subject(suj(su7), sg, tercera) --> ["it"].
 % Defining English Nouns
 
 noun(sus(s1),sg) --> ["girl"]. 
-noun(sus(s2),sg) --> ["boy"]. 
+noun(sus(s1),sg) --> ["kid"]. % synonym
+noun(sus(s2),sg) --> ["boy"].
+noun(sus(s2),sg) --> ["kid"].  % synonym
 noun(sus(s3),pl) --> ["girls"]. 
+noun(sus(s3),pl) --> ["kids"]. % synonym
 noun(sus(s4),pl) --> ["boys"]. 
+noun(sus(s4),pl) --> ["kids"]. % synonym
 noun(sus(s5),sg) --> ["cat"]. 
 noun(sus(s6),pl) --> ["cats"]. 
 noun(sus(s7),sg) --> ["dog"].
 noun(sus(s8),pl) --> ["dogs"].
 noun(sus(s9),sg) --> ["person"].
+noun(sus(s9),sg) --> ["human"]. % synonym
 noun(sus(s10),sg) --> ["people"].
+noun(sus(s10),sg) --> ["crowd"]. % synonym
 noun(sus(s11),sg) --> ["computer"].
 noun(sus(s12),pl) --> ["computers"].
 noun(sus(s13),sg) --> ["teacher"].
 noun(sus(s14),pl) --> ["teachers"].
 noun(sus(s15),sg) --> ["mother"].
+noun(sus(s15),sg) --> ["mom"]. % synonym
 noun(sus(s16),sg) --> ["father"].
+noun(sus(s16),sg) --> ["dad"]. % synonym
 noun(sus(s17),pl) --> ["parents"].
 noun(sus(s18),sg) --> ["food"].
+noun(sus(s18),sg) --> ["meal"]. % synonym
 noun(sus(s19),sg) --> ["pet"].
 noun(sus(s20),pl) --> ["pets"].
 
