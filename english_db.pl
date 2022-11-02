@@ -27,6 +27,7 @@ auxiliar(au(aux2)) --> ["what"].
 auxiliar(au(aux3)) --> ["where"].
 auxiliar(au(aux4)) --> ["why"].
 auxiliar(au(aux5)) --> ["which"].
+auxiliar(au(aux6)) --> ["who"].
 
 % Verb To Be
 
@@ -42,7 +43,6 @@ subject(suj(su3), pl, segunda) --> ["you"].
 subject(suj(su4), pl, tercera) --> ["they"].
 subject(suj(su5), sg, tercera) --> ["she"].
 subject(suj(su6), sg, tercera) --> ["he"].
-subject(suj(su7), sg, tercera) --> ["it"].
 
 % Defining English Nouns
 

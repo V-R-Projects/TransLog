@@ -28,6 +28,25 @@ articulo(a(art3),m,sg) --> ["eso"].
 articulo(a(art4),f,pl) --> ["esas"].
 articulo(a(art4),m,pl) --> ["esos"].
 
+% Auxiliar words for Spanish Questions
+
+auxiliares(au(aux1),_) --> ["cuando"].
+auxiliares(au(aux2),_) --> ["que"].
+auxiliares(au(aux3),_) --> ["donde"].
+auxiliares(au(aux4),_) --> ["por"], auxiliares(aux2).
+auxiliares(au(aux5),sg) --> ["cual"].
+auxiliares(au(aux5),pl) --> ["cuales"].
+auxiliares(au(aux6),sg) --> ["quien"].
+auxiliares(au(aux6),pl) --> ["quienes"].
+
+% Spanish Verb "ser"
+
+ser(tobe(tb1),sg,primera) --> ["soy"].
+ser(tobe(tb2),sg,segunda) --> ["es"].
+ser(tobe(tb2),pl,segunda) --> ["son"].
+ser(tobe(tb3),sg,tercera) --> ["es"].
+ser(tobe(tb2),pl,tercera) --> ["son"].
+
 % Defining Spanish subjects
 
 sujeto(suj(su1), _,primera, _) --> ["yo"].
@@ -44,7 +63,6 @@ sujeto(suj(su6), m,tercera,sg) --> ["él"].
 sujeto(suj(su4), f,tercera,pl) --> ["ellas"].
 sujeto(suj(su4), m,tercera,pl) --> ["ellos"].
 
-sujeto(suj(su7), _,tercera,singular) --> [""].
 
 % Defining Spanish Nouns
 
@@ -78,6 +96,7 @@ sustantivo(sus(s14),m, tercera, pl) --> ["profesores"].
 sustantivo(sus(s14),m, tercera, pl) --> ["maestros"]. %sinonimo
 sustantivo(sus(s15),f, tercera, sg) --> ["mama"].
 sustantivo(sus(s15),f, tercera, sg) --> ["madre"]. %sinonimo
+sustantivo(sus(s16),m, tercera, sg) --> ["papa"].
 sustantivo(sus(s16),m, tercera, sg) --> ["papa"].
 sustantivo(sus(s16),m, tercera, sg) --> ["padre"]. %sinonimo
 sustantivo(sus(s17),m, tercera, pl) --> ["papas"].

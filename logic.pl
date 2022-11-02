@@ -1,12 +1,18 @@
+% Logic File
+
+% Including Files
 :-[cf_grammar].
+
+% Steping out warnings
 :-style_check(-singleton).
 
+% Calling the Translator
 transLog():-
     writeln("Digite 1 para Espanol-Ingles / Digite 2 para Ingles-Espanol 2 / Salir-Quit 3"),
     read(OPTION),
     consulta(OPTION).
 
-
+% Checking equality
 igualdad(X,Y):- X==Y.
 
 % Spanish to English
@@ -38,13 +44,11 @@ consulta(OPTION):-
     transLog(), !.
 
 % Quit Option
-
 consulta(OPTION):-
     igualdad(OPTION,3),
     writeln("Good bye / Adios").
 
 % Continue conversation
-
 consulta(OPTION):-
     writeln("No entendi, intenta otra vez / Did not understand, try again..."),
     transLog().
