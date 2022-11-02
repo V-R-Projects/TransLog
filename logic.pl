@@ -26,6 +26,7 @@ consulta(OPTION):-
     phrase(sentence(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
+    write("TransLog: "),
     writeln(String),
     transLog(), !.
 
@@ -40,6 +41,7 @@ consulta(OPTION):-
     phrase(oracion(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
+    write("TransLog: "),
     writeln(String), 
     transLog(), !.
 
